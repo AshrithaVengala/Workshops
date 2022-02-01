@@ -1,0 +1,48 @@
+$color:gray;
+$margin:5px;
+@mixin area() {
+    header{
+        background-color: $color;
+        grid-area: head;
+        margin: $margin;
+        color:white;
+        background-size: contain;
+    }
+    nav{
+        background-color:black;
+        grid-area: nav;
+        margin:$margin;
+        color: white;
+        background-size: contain;
+
+    }
+    footer{
+        background-color:$color ;
+        grid-area: foot;
+        margin:$margin;
+        background-size: contain;
+    }
+    .ar1{
+        background-color: $color;
+        grid-area: ar1;
+        margin:$margin;
+    }
+    .ar2{
+        background-color: $color;
+        grid-area: ar2;
+        margin:$margin;
+    }
+    .ar3{
+        background-color: $color;
+        grid-area: ar3;
+        margin:$margin;
+    }
+    .ar4{
+        background-color: $color;
+        grid-area: ar4;
+        margin:$margin;
+    }
+
+
+    
+}

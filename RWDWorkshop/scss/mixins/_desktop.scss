@@ -1,0 +1,20 @@
+@import "./gridArea";
+@mixin myDesktop() {
+    @include area(); 
+    .page{
+        display:grid;
+        width: 100vh;
+        height:100vh;
+        background-color: white;
+        margin: auto;
+        grid-template: "head head head head" 
+                        "nav nav nav nav"
+                        "ar1 ar2 ar2 ar2"
+                        "ar3 ar4 ar4 ar4" 
+                        "foot foot foot foot";
+                     
+                        grid-template-rows: 1fr 0.5fr 4fr 4fr 1fr;
+                        
+                }
+     
+}

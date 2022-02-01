@@ -1,0 +1,23 @@
+@import "./gridArea";
+
+@mixin myMobile() {
+    @include area();
+    .page{
+        display:grid;
+        width: 100%;
+        height:100%;
+        background-color: white;
+        margin: auto;
+        grid-template: "head" 
+                        "nav" 
+                        "ar1"
+                        "ar2"
+                        "ar3"
+                        "ar4" 
+                        "foot";
+                     
+                        grid-template-rows:200px 100px 300px 300px 300px 300px 100px;
+                        
+        }
+
+}

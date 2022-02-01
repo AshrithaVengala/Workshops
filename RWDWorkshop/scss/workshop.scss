@@ -1,0 +1,24 @@
+@import "mixins/desktop";/*css for desktop is written in mixins*/
+@import "mixins/mobile";
+@import "mixins/image";
+$text-align:center;
+$font-size:15px;
+ @media(min-width: 797px){   /* this will apply when the screen is greater than 797px*/
+
+   @include myDesktop();
+   @include myImage();
+
+}
+ 
+  @media(max-width: 797px){   /* this will apply when the screen is less than 797px*/
+    @include myMobile();
+    @include myImage();
+
+
+}
+header,footer{
+  font-size: $font-size;
+  font-size: $font-size;
+
+}
+
